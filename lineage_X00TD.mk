@@ -8,8 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff
+# Inherit some common Evolution X.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# EvolutionX Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+EVO_BUILD_TYPE := Unofficial
+
+# EvolutionX GApps
+WITH_GMS := false
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
