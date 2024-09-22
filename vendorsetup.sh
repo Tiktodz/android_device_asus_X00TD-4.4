@@ -5,6 +5,9 @@ rm -rf kernel/asus/sdm660/KernelSU/website
 rm -rf kernel/asus/sdm660/KernelSU/scripts
 rm -rf kernel/asus/sdm660/KernelSU/docs
 
+rm -rf bootable/deprecated-ota
+git clone --depth=1 https://github.com/yaap/bootable_deprecated-ota bootable/deprecated-ota
+
 rm -rf device/asus/sdm660-common
 #rm -rf device/asus/X00TD
 git clone --depth=1 https://github.com/Tiktodz/android_device_asus_sdm660-common-4.4 -b vic device/asus/sdm660-common
