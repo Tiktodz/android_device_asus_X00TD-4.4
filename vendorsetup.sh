@@ -5,6 +5,9 @@ rm -rf kernel/asus/sdm660/KernelSU/website
 rm -rf kernel/asus/sdm660/KernelSU/scripts
 rm -rf kernel/asus/sdm660/KernelSU/docs
 
+rm -rf hardware/interfaces
+git clone --depth=1 https://github.com/sotodrom/android_hardware_interfaces -b blaze hardware/interfaces
+
 rm -rf kernel/configs
 git clone --depth=1 https://github.com/sotodrom/android_kernel_configs kernel/configs
 
