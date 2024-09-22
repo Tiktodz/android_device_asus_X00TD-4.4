@@ -16,6 +16,13 @@ git clone --depth=1 https://github.com/Tiktodz/android_vendor_asus-4.4 vendor/as
 rm -rf vendor/lineage-priv
 git clone https://github.com/Tiktodz/vendor -b matrixx vlp && cp -R vlp/* vendor/ && rm -rf vlp 
 
+rm -rf hardware/qcom-caf/msm8998/audio
+rm -rf hardware/qcom-caf/msm8998/display
+rm -rf hardware/qcom-caf/msm8998/media
+git clone --depth=1 https://github.com/inexdroid/hardware_qcom-caf_msm8998_audio -b 14 hardware/qcom-caf/msm8998/audio
+git clone --depth=1 https://github.com/inexdroid/hardware_qcom-caf_msm8998_display -b 14 hardware/qcom-caf/msm8998/display
+git clone --depth=1 https://github.com/inexdroid/hardware_qcom-caf_msm8998_media -b 14 hardware/qcom-caf/msm8998/media
+
 export BUILD_USER=queen
 export BUILD_USERNAME=queen
 export TZ=Asia/Jakarta
