@@ -8,21 +8,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Evolution X.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Blaze stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# EvolutionX Flags
+# Blaze official flags
 TARGET_BOOT_ANIMATION_RES := 1080
-EVO_BUILD_TYPE := Unofficial
-
-# EvolutionX GApps
-WITH_GMS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := fakedotkit
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X00TD
+PRODUCT_NAME := blaze_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
