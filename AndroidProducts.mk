@@ -8,4 +8,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/blaze_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_X00TD-userdebug
+    blaze_X00TD-ap2a-userdebug
