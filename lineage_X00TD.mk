@@ -22,6 +22,7 @@ MATRIXX_DISPLAY := 1080x2160
 BUILD_GOOGLE_CONTACTS := false
 BUILD_GOOGLE_DIALER := false
 BUILD_GOOGLE_MESSAGE := false
+TARGET_DISABLE_EPPE := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
