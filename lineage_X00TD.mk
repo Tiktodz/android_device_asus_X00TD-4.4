@@ -11,6 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Matrixx
+MATRIXX_MAINTAINER := ∂σткιт
+WITH_GMS := false
+
+# Extra Matrixx Stuff
+MATRIXX_CHIPSET := SDM660
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 1080x2160
+BUILD_GOOGLE_CONTACTS := false
+BUILD_GOOGLE_DIALER := false
+BUILD_GOOGLE_MESSAGE := false
+
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
